@@ -1,0 +1,2 @@
+# GrabMagic
+Screenshotting tool
