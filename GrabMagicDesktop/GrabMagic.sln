@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrabMagicDesktop", "GrabMag
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrabMagicAndroid", "GrabMagicAndroid\GrabMagicAndroid.csproj", "{00C29DBC-76A7-4435-824C-5C32FAD2AD47}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrabMagicWeb", "GrabMagicWeb\GrabMagicWeb.csproj", "{02A868AF-4789-4C01-9469-D5644EB85FF1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,6 +25,10 @@ Global
 		{00C29DBC-76A7-4435-824C-5C32FAD2AD47}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{00C29DBC-76A7-4435-824C-5C32FAD2AD47}.Release|Any CPU.Build.0 = Release|Any CPU
 		{00C29DBC-76A7-4435-824C-5C32FAD2AD47}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{02A868AF-4789-4C01-9469-D5644EB85FF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02A868AF-4789-4C01-9469-D5644EB85FF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02A868AF-4789-4C01-9469-D5644EB85FF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02A868AF-4789-4C01-9469-D5644EB85FF1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
