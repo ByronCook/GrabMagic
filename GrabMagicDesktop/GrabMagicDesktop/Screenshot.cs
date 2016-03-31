@@ -8,5 +8,9 @@ namespace GrabMagicDesktop
 {
     class Screenshot
     {
+        public void GrabFullScreen()
+        {
+
+        }
     }
 }
