@@ -34,7 +34,7 @@ namespace GrabMagicDesktop
             String sourcefilepath = "C:\\Users\\Byron\\file.png";
             String ftpurl = "ftp://smarterasp.net/site1/"; // e.g. ftp://serverip/foldername/foldername
             String ftpusername = "byron010-001"; // e.g. username
-            String ftppassword = "00melby11"; // e.g. password
+            String ftppassword = "0ByronBailey1"; // e.g. password
             string filename = Path.GetFileName(sourcefilepath);
             string ftpfullpath = ftpurl + "file.png";
             FtpWebRequest ftp = (FtpWebRequest) FtpWebRequest.Create(ftpfullpath);
