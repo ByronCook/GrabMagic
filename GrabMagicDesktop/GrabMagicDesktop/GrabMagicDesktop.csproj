@@ -48,6 +48,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FTP.cs" />
     <Compile Include="GrabMagicForm.cs">
       <SubType>Form</SubType>
     </Compile>
