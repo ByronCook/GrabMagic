@@ -3,10 +3,10 @@ Screenshotting tool
 
 ~ Grab Magic ~
 
-# Done
+$ Done
 & In Progress
 
-[Desktop]
+# Desktop
 # Fullscreen selecting
 & Screen area selecting 
 & Upload to database table in proper format (Image<->byte<->bitmap<->stream)
@@ -18,7 +18,7 @@ Login
 Registration
 Interface layout (Login, Registration, Index)
 
-[Android]
+# Android 
 Login
 Registration
 Gallery
@@ -26,7 +26,7 @@ Image Information
 Image Editing (Title, Description)
 Image Sharing
 
-[Web]
+# Web
 Home (Includes About, Download)
 Login
 Registration
