@@ -1,36 +1,36 @@
 # GrabMagic
 Screenshotting tool
 
-~ Grab Magic ~
+# ~ Grab Magic ~ </br>
 
-$ Done
-& In Progress
+$ Done </br>
+& In Progress </br>
 
 # Desktop
-# Fullscreen selecting
-& Screen area selecting 
-& Upload to database table in proper format (Image<->byte<->bitmap<->stream)
-Global shortkeys
-Hide from taskbar
-Display in Item tray
-Run at startup of Pc
-Login
-Registration
-Interface layout (Login, Registration, Index)
+$ Fullscreen selecting</br>
+& Screen area selecting </br>
+& Upload to database table in proper format (Image<->byte<->bitmap<->stream)</br>
+Global shortkeys</br>
+Hide from taskbar</br>
+Display in Item tray</br>
+Run at startup of Pc</br>
+Login</br>
+Registration</br>
+Interface layout (Login, Registration, Index)</br>
 
 # Android 
-Login
-Registration
-Gallery
-Image Information
-Image Editing (Title, Description)
-Image Sharing
+Login</br>
+Registration</br>
+Gallery</br>
+Image Information</br>
+Image Editing (Title, Description)</br>
+Image Sharing</br>
 
 # Web
-Home (Includes About, Download)
-Login
-Registration
-Gallery
-Image Information
-Image Editing (Title, Description)
-Image Sharing
+Home (Includes About, Download)</br>
+Login</br>
+Registration</br>
+Gallery</br>
+Image Information</br>
+Image Editing (Title, Description)</br>
+Image Sharing</br>
