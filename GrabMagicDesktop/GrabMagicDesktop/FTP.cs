@@ -10,7 +10,6 @@ namespace GrabMagicDesktop
     {
         public void UploadFile(Image image)
         {
-
             //User details might need to be replaced by users login? not sure
             var ftpusername = "byron010-001"; // e.g. username
             var ftppassword = "0ByronBailey1"; // e.g. password
