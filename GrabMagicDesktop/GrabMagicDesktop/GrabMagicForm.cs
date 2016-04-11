@@ -12,9 +12,9 @@ namespace GrabMagicDesktop
 
         private void button1_Click(object sender, EventArgs e)
         {
-            var screenshot = new Screenshot();
-            new Ftp().UploadFile(screenshot.GrabFullScreen());
-            screenshot.Delete();
+            //var screenshot = new Screenshot();
+            //new Ftp().UploadFile(screenshot.GrabFullScreen());
+           // screenshot.Delete();
         }
     }
 }

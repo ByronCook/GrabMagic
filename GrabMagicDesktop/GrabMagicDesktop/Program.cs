@@ -13,7 +13,7 @@ namespace GrabMagicDesktop
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new GrabMagicForm());
+            Application.Run(new LoginForm());
         }
     }
 }

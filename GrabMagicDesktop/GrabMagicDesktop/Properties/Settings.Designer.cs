@@ -34,5 +34,16 @@ namespace GrabMagicDesktop.Properties {
                 return ((string)(this["aspnet_GrabMagicWeb_20160331110259ConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=SQL5017.Smarterasp.net;Initial Catalog=DB_9FA624_byron010;User ID=DB_" +
+            "9FA624_byron010_admin;Password=simple123")]
+        public string DB_9FA624_byron010ConnectionString {
+            get {
+                return ((string)(this["DB_9FA624_byron010ConnectionString"]));
+            }
+        }
     }
 }

@@ -12,7 +12,7 @@ namespace GrabMagicWeb.Models
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
         public ApplicationDbContext()
-            : base("DefaultConnection")
+            : base("DB_9FA624_byron010")
         {
         }
     }
