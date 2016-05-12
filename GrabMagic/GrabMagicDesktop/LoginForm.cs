@@ -24,7 +24,7 @@ namespace GrabMagicDesktop
             {
                 //Create SqlConnection
                 //var con = new SqlConnection(@"Data Source=(localdb)\v11.0;Initial Catalog=Login;Integrated Security=True;Pooling=False");
-                var con = new SqlConnection(ConfigurationManager.ConnectionStrings["GrabMagicDatabase"].ConnectionString);
+                var con = new SqlConnection(ConfigurationManager.ConnectionStrings["SmarterAsp"].ConnectionString);
                 var cmd = new SqlCommand();
                 cmd.Parameters.Clear();
                 cmd.Connection = con;

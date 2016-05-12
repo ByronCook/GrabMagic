@@ -13,7 +13,7 @@ namespace GrabMagicDesktop
             try
             {
                 var openCon =
-                    new SqlConnection(ConfigurationManager.ConnectionStrings["GrabMagicDatabase"].ConnectionString);
+                    new SqlConnection(ConfigurationManager.ConnectionStrings["SmarterAsp"].ConnectionString);
                 openCon.Open();
 
                 using (var imageSave = new SqlCommand(saveImage))
