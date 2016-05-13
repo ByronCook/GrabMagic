@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WindowsFormsApplication1;
 
 namespace GrabMagicDesktop
 {
@@ -25,6 +26,12 @@ namespace GrabMagicDesktop
         private void button1_Click(object sender, EventArgs e)
         {
             Screenshot.CaptureFullScreen(ActiveUserId);
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Hide();
+            new ShowPicture().Show();
         }
     }
 }
