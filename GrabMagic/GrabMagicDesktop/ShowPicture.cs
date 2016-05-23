@@ -26,7 +26,7 @@ namespace WindowsFormsApplication1
                 using (var cmd = new SqlCommand(retrieveImage))
                 {
                     cmd.Connection = openCon;
-                    cmd.Parameters.Add("@ImageId", 1);
+                    cmd.Parameters.Add("@ImageId", 3);
                     //imageSave.ExecuteNonQuery();
                     using (var reader = cmd.ExecuteReader())
                     {
