@@ -1,14 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 using System.Runtime.InteropServices;
-using WindowsFormsApplication1;
+using System.Windows.Forms;
 
 namespace GrabMagicDesktop
 {
@@ -21,11 +13,10 @@ namespace GrabMagicDesktop
 
         const int FULLSCREEN_HOTKEY_ID = 1;
 
-        public int ActiveUserId { get; set; }
         public Screenshot Screenshot { get; set; }
-        public GrabMagic(int userId)
+
+        public GrabMagic()
         {
-            ActiveUserId = userId;
             InitializeComponent();
             Screenshot = new Screenshot();
             RegisterHotKey(Handle, FULLSCREEN_HOTKEY_ID, 0, (int)Keys.F5);
@@ -36,21 +27,38 @@ namespace GrabMagicDesktop
         {
             if (m.Msg == 0x0312 && m.WParam.ToInt32() == FULLSCREEN_HOTKEY_ID)
             {
-                Screenshot.CaptureFullScreen(ActiveUserId);
-                MessageBox.Show("Success");
+                Screenshot.CaptureFullScreen();
             }
             base.WndProc(ref m);
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Screenshot.CaptureFullScreen(ActiveUserId);
+            Screenshot.CaptureFullScreen();
+            GrabMagicNotify.BalloonTipTitle = "GrabMagic™";
+            GrabMagicNotify.BalloonTipText = "Screenshot has been uploaded!";
+            GrabMagicNotify.ShowBalloonTip(500);
+
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void GrabMagic_Resize(object sender, EventArgs e)
         {
-            Hide();
-            new ShowPicture().Show();
+            if (FormWindowState.Minimized == this.WindowState)
+            {
+                GrabMagicNotify.Visible = true;
+                Hide();
+            }
+
+            else if (FormWindowState.Normal == this.WindowState)
+            {
+                GrabMagicNotify.Visible = false;
+
+            }
+        }
+
+        private void toolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
