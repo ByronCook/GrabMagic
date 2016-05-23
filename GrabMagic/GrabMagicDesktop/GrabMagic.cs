@@ -11,7 +11,7 @@ namespace GrabMagicDesktop
         [DllImport("user32.dll")]
         public static extern bool UnregisterHotKey(IntPtr hWnd, int id);
 
-        const int FULLSCREEN_HOTKEY_ID = 1;
+        const int FullscreenHotkeyId = 1;
 
         public Screenshot Screenshot { get; set; }
 
@@ -19,13 +19,13 @@ namespace GrabMagicDesktop
         {
             InitializeComponent();
             Screenshot = new Screenshot();
-            RegisterHotKey(Handle, FULLSCREEN_HOTKEY_ID, 0, (int)Keys.F5);
+            RegisterHotKey(Handle, FullscreenHotkeyId, (int) KeyModifier.Shift, (int)Keys.D2);
             
         }
 
         protected override void WndProc(ref Message m)
         {
-            if (m.Msg == 0x0312 && m.WParam.ToInt32() == FULLSCREEN_HOTKEY_ID)
+            if (m.Msg == 0x0312 && m.WParam.ToInt32() == FullscreenHotkeyId)
             {
                 Screenshot.CaptureFullScreen();
             }

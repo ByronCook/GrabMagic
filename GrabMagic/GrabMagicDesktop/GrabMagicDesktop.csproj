@@ -57,6 +57,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="KeyModifier.cs" />
     <Compile Include="Data.cs" />
     <Compile Include="GrabMagic.cs">
       <SubType>Form</SubType>

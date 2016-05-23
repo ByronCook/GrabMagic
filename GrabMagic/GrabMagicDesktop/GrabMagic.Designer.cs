@@ -43,7 +43,7 @@
             this.FullscreenScreenshotButton.Font = new System.Drawing.Font("TYPOGRAPH PRO", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FullscreenScreenshotButton.Location = new System.Drawing.Point(12, 12);
             this.FullscreenScreenshotButton.Name = "FullscreenScreenshotButton";
-            this.FullscreenScreenshotButton.Size = new System.Drawing.Size(162, 42);
+            this.FullscreenScreenshotButton.Size = new System.Drawing.Size(203, 42);
             this.FullscreenScreenshotButton.TabIndex = 0;
             this.FullscreenScreenshotButton.Text = "Fullscreen Screenshot";
             this.FullscreenScreenshotButton.UseVisualStyleBackColor = true;
@@ -54,7 +54,7 @@
             this.button1.Font = new System.Drawing.Font("TYPOGRAPH PRO", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(12, 90);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(162, 42);
+            this.button1.Size = new System.Drawing.Size(203, 42);
             this.button1.TabIndex = 1;
             this.button1.Text = "Region Screenshot";
             this.button1.UseVisualStyleBackColor = true;
@@ -71,7 +71,7 @@
             this.ExitContextMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripMenuItem1});
             this.ExitContextMenu.Name = "Exit";
-            this.ExitContextMenu.Size = new System.Drawing.Size(153, 48);
+            this.ExitContextMenu.Size = new System.Drawing.Size(93, 26);
             this.ExitContextMenu.Text = "Exit";
             // 
             // toolStripMenuItem1
@@ -86,7 +86,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(186, 146);
+            this.ClientSize = new System.Drawing.Size(227, 146);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.FullscreenScreenshotButton);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
