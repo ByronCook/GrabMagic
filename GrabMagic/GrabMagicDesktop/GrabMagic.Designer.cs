@@ -28,15 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GrabMagic));
             this.FullscreenScreenshotButton = new System.Windows.Forms.Button();
             this.RegionButton = new System.Windows.Forms.Button();
-            this.GrabMagicNotify = new System.Windows.Forms.NotifyIcon(this.components);
-            this.ExitContextMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.showToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.ExitContextMenu.SuspendLayout();
+            this.CheckRun = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // FullscreenScreenshotButton
@@ -61,42 +56,24 @@
             this.RegionButton.UseVisualStyleBackColor = true;
             this.RegionButton.Click += new System.EventHandler(this.RegionButton_Click);
             // 
-            // GrabMagicNotify
+            // CheckRun
             // 
-            this.GrabMagicNotify.ContextMenuStrip = this.ExitContextMenu;
-            this.GrabMagicNotify.Icon = ((System.Drawing.Icon)(resources.GetObject("GrabMagicNotify.Icon")));
-            this.GrabMagicNotify.Text = "GrabMagic Screenshotting Application™";
-            this.GrabMagicNotify.Visible = true;
-            // 
-            // ExitContextMenu
-            // 
-            this.ExitContextMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.showToolStripMenuItem,
-            this.toolStripMenuItem1});
-            this.ExitContextMenu.Name = "Exit";
-            this.ExitContextMenu.Size = new System.Drawing.Size(104, 48);
-            this.ExitContextMenu.Text = "Exit";
-            // 
-            // showToolStripMenuItem
-            // 
-            this.showToolStripMenuItem.Name = "showToolStripMenuItem";
-            this.showToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
-            this.showToolStripMenuItem.Text = "Show";
-            this.showToolStripMenuItem.Click += new System.EventHandler(this.showToolStripMenuItem_Click);
-            // 
-            // toolStripMenuItem1
-            // 
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(103, 22);
-            this.toolStripMenuItem1.Text = "Exit";
-            this.toolStripMenuItem1.ToolTipText = "Exit";
-            this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
+            this.CheckRun.AutoSize = true;
+            this.CheckRun.Font = new System.Drawing.Font("TYPOGRAPH PRO", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CheckRun.Location = new System.Drawing.Point(12, 63);
+            this.CheckRun.Name = "CheckRun";
+            this.CheckRun.Size = new System.Drawing.Size(107, 18);
+            this.CheckRun.TabIndex = 2;
+            this.CheckRun.Text = "Run at startup";
+            this.CheckRun.UseVisualStyleBackColor = true;
+            this.CheckRun.CheckedChanged += new System.EventHandler(this.CheckRun_CheckedChanged);
             // 
             // GrabMagic
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(227, 146);
+            this.Controls.Add(this.CheckRun);
             this.Controls.Add(this.RegionButton);
             this.Controls.Add(this.FullscreenScreenshotButton);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -104,8 +81,8 @@
             this.Name = "GrabMagic";
             this.Text = "GrabMagic";
             this.Resize += new System.EventHandler(this.GrabMagic_Resize);
-            this.ExitContextMenu.ResumeLayout(false);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -113,9 +90,6 @@
 
         private System.Windows.Forms.Button FullscreenScreenshotButton;
         private System.Windows.Forms.Button RegionButton;
-        private System.Windows.Forms.NotifyIcon GrabMagicNotify;
-        private System.Windows.Forms.ContextMenuStrip ExitContextMenu;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem showToolStripMenuItem;
+        private System.Windows.Forms.CheckBox CheckRun;
     }
 }

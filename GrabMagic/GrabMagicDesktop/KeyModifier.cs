@@ -1,6 +1,6 @@
 ﻿namespace GrabMagicDesktop
 {
-    enum KeyModifier
+    internal enum KeyModifier
     {
         None = 0,
         Alt = 1,

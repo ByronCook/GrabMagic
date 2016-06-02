@@ -5,16 +5,37 @@ VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrabMagicDesktop", "GrabMagicDesktop\GrabMagicDesktop.csproj", "{0CDB0C9D-8815-462B-BE26-303D56EEF1EA}"
 EndProject
+Project("{6141683F-8A12-4E36-9623-2EB02B2C2303}") = "GrabMagicInstaller", "GrabMagicInstaller\GrabMagicInstaller.isproj", "{67BE91CD-1358-4676-B03B-9969850E282B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		CD_ROM|Any CPU = CD_ROM|Any CPU
 		Debug|Any CPU = Debug|Any CPU
+		DVD-5|Any CPU = DVD-5|Any CPU
 		Release|Any CPU = Release|Any CPU
+		SingleImage|Any CPU = SingleImage|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0CDB0C9D-8815-462B-BE26-303D56EEF1EA}.CD_ROM|Any CPU.ActiveCfg = Release|Any CPU
+		{0CDB0C9D-8815-462B-BE26-303D56EEF1EA}.CD_ROM|Any CPU.Build.0 = Release|Any CPU
 		{0CDB0C9D-8815-462B-BE26-303D56EEF1EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{0CDB0C9D-8815-462B-BE26-303D56EEF1EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0CDB0C9D-8815-462B-BE26-303D56EEF1EA}.DVD-5|Any CPU.ActiveCfg = Debug|Any CPU
+		{0CDB0C9D-8815-462B-BE26-303D56EEF1EA}.DVD-5|Any CPU.Build.0 = Debug|Any CPU
 		{0CDB0C9D-8815-462B-BE26-303D56EEF1EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0CDB0C9D-8815-462B-BE26-303D56EEF1EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0CDB0C9D-8815-462B-BE26-303D56EEF1EA}.SingleImage|Any CPU.ActiveCfg = Release|Any CPU
+		{0CDB0C9D-8815-462B-BE26-303D56EEF1EA}.SingleImage|Any CPU.Build.0 = Release|Any CPU
+		{67BE91CD-1358-4676-B03B-9969850E282B}.CD_ROM|Any CPU.ActiveCfg = CD_ROM
+		{67BE91CD-1358-4676-B03B-9969850E282B}.CD_ROM|Any CPU.Build.0 = CD_ROM
+		{67BE91CD-1358-4676-B03B-9969850E282B}.Debug|Any CPU.ActiveCfg = DVD-5
+		{67BE91CD-1358-4676-B03B-9969850E282B}.Debug|Any CPU.Build.0 = DVD-5
+		{67BE91CD-1358-4676-B03B-9969850E282B}.DVD-5|Any CPU.ActiveCfg = DVD-5
+		{67BE91CD-1358-4676-B03B-9969850E282B}.DVD-5|Any CPU.Build.0 = DVD-5
+		{67BE91CD-1358-4676-B03B-9969850E282B}.Release|Any CPU.ActiveCfg = SingleImage
+		{67BE91CD-1358-4676-B03B-9969850E282B}.Release|Any CPU.Build.0 = SingleImage
+		{67BE91CD-1358-4676-B03B-9969850E282B}.SingleImage|Any CPU.ActiveCfg = SingleImage
+		{67BE91CD-1358-4676-B03B-9969850E282B}.SingleImage|Any CPU.Build.0 = SingleImage
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

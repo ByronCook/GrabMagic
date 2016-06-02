@@ -16,6 +16,7 @@ namespace GrabMagicDesktop
                 var endpoint = new ImageEndpoint(client);
                 var image = await endpoint.UploadImageBinaryAsync(img);
                 Process.Start(image.Link);
+                Clipboard.SetText(image.Link);
             }
             catch (ImgurException imgurEx)
             {

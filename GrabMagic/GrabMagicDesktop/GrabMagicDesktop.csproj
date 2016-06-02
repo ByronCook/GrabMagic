@@ -31,6 +31,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Untitled-2.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="Imgur.API, Version=3.6.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Imgur.API.3.6.0\lib\portable-net45+win+MonoAndroid10+xamarinios10+MonoTouch10\Imgur.API.dll</HintPath>
@@ -57,6 +60,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BalloonForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BalloonForm.Designer.cs">
+      <DependentUpon>BalloonForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClickAction.cs" />
+    <Compile Include="CursorPosition.cs" />
+    <Compile Include="RegionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegionForm.Designer.cs">
+      <DependentUpon>RegionForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="KeyModifier.cs" />
     <Compile Include="Data.cs" />
     <Compile Include="GrabMagic.cs">
@@ -68,7 +85,12 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Screenshot.cs" />
-    <Compile Include="User.cs" />
+    <EmbeddedResource Include="BalloonForm.resx">
+      <DependentUpon>BalloonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegionForm.resx">
+      <DependentUpon>RegionForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GrabMagic.resx">
       <DependentUpon>GrabMagic.cs</DependentUpon>
     </EmbeddedResource>
@@ -95,6 +117,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Untitled-2.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
