@@ -75,8 +75,13 @@
             this.ClientSize = new System.Drawing.Size(284, 261);
             this.ControlBox = false;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "BalloonForm";
+            this.ShowIcon = false;
+            this.ShowInTaskbar = false;
             this.Text = "BalloonForm";
+            this.WindowState = System.Windows.Forms.FormWindowState.Minimized;
             this.ExitContextMenu.ResumeLayout(false);
             this.ResumeLayout(false);
 

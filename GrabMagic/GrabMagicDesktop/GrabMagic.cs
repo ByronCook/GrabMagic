@@ -54,6 +54,7 @@ namespace GrabMagicDesktop
             {
                 case FormWindowState.Minimized:
                     BalloonForm.Visible = true;
+                    BalloonForm.WindowState = FormWindowState.Minimized;
                     Hide();
                     break;
                 case FormWindowState.Normal:
