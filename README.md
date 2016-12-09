@@ -1,3 +1,5 @@
+#OLD Code, Needs a lot of refactoring
+
 # GrabMagic
 Screenshotting tool
 
